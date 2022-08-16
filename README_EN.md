@@ -73,11 +73,11 @@ bool check_distance(const Point& p)
 
 int main()
 {
-    //a=1,b=2 are arguments of generate_point. Generate 50000 samples
+   	//a=1,b=2 are arguments of generate_point. Generate 50000 samples
 	auto res = MonteCarlo(50000,check_distance, generate_point,1,2); 
 	std::cout <<"test";
 	double p = res.get();
-    double PI = 4 * p;
+   	double PI = 4 * p;
 	std::cout << PI;
 	return 0;
 }
