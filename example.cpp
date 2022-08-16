@@ -2,6 +2,7 @@
 #include<iostream>
 #include<random>
 
+
 std::default_random_engine engine(time(0));
 std::uniform_real_distribution<double> unifrom(0, 1);
 
@@ -28,6 +29,7 @@ int main()
 {
 	auto res = MonteCarlo(50000,check_distance, generate_point);	
 	double p = res.get();
-	std::cout << 4 * p;
+	double PI = 4 * p;
+	std::cout << PI;
 	return 0;
 }
