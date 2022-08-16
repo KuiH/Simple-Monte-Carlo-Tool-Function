@@ -74,11 +74,11 @@ bool check_distance(const Point& p)
 
 int main()
 {
-    //给generate_point传递参数: a=1,b=2。生成50000个样本
+    	//给generate_point传递参数: a=1,b=2。生成50000个样本
 	auto res = MonteCarlo(50000,check_distance, generate_point,1,2); 
 	std::cout <<"test";
 	double p = res.get();
-    double PI = 4 * p;
+	double PI = 4 * p;
 	std::cout << PI;
 	return 0;
 }
